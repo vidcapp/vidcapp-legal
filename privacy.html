@@ -5,83 +5,147 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vidcapp – Datenschutzerklärung</title>
   <style>
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.55}
-    h1,h2{line-height:1.2} .muted{color:#6b7280}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6;color:#111827
+    }
+    h1{margin:0 0 8px;line-height:1.2}
+    h2{margin-top:26px;line-height:1.2}
+    h3{margin-top:14px}
+    .muted{color:#6b7280}
+    .card{border:1px solid #e5e7eb;border-radius:14px;padding:16px;margin:14px 0;background:#fff}
+    a{color:#2563eb;text-decoration:none} a:hover{text-decoration:underline}
     code{background:#f3f4f6;padding:2px 6px;border-radius:8px}
+    ul{padding-left:18px}
+    .toc a{display:block;padding:4px 0}
+    footer{margin-top:26px;padding-top:14px;border-top:1px solid #e5e7eb}
   </style>
 </head>
 <body>
   <h1>Datenschutzerklärung – Vidcapp</h1>
-  <p class="muted">Stand: 2025-12-30 (Datum bei Veröffentlichung anpassen)</p>
+  <p class="muted">Stand: 2025-12-30</p>
 
-  <h2>1. Verantwortliche Stelle</h2>
-  <p>
-    Anbieter/Verantwortliche:r: <b>Vidcapp</b><br/>
-    Kontakt: <b>vidcapphelp@gmail.com</b><br/>
-    (Optional: Anschrift ergänzen, wenn du ein Impressum/Unternehmen hast)
-  </p>
+  <div class="card">
+    <p><b>Kurzfassung:</b> Vidcapp verarbeitet deine Medien hauptsächlich <b>lokal auf deinem Gerät</b>, um Untertitel zu erstellen und Videos zu exportieren.
+      Nach aktuellem Stand betreiben wir <b>keine eigenen Server</b> für deine Videoinhalte. Zahlungen laufen über <b>Apple In-App-Käufe</b>.
+    </p>
+    <p class="muted" style="margin:0">
+      Kontakt: <a href="mailto:vidcapphelp@gmail.com"><b>vidcapphelp@gmail.com</b></a>
+    </p>
+  </div>
 
-  <h2>2. Kurzüberblick</h2>
-  <ul>
-    <li>Vidcapp verarbeitet Videos zur Untertitel-Erstellung und zum Export.</li>
-    <li>Nach aktuellem Stand betreiben wir keine eigenen Nutzerkonten und keine eigene Datenbank für Videoinhalte.</li>
-    <li>Die App nutzt iOS-Systemfunktionen (z.B. Foto-/Mediathek, Mikrofon, Speech/Transkription). Je nach Gerät/OS können dabei Daten durch Apple verarbeitet werden.</li>
-    <li>Zahlungen für Abos laufen über Apple In-App-Purchase; wir erhalten keine vollständigen Zahlungsdaten.</li>
-  </ul>
+  <div class="card toc">
+    <b>Inhalt</b>
+    <a href="#verantwortlich">1. Verantwortliche Stelle</a>
+    <a href="#daten">2. Welche Daten verarbeitet Vidcapp?</a>
+    <a href="#zwecke">3. Zwecke & Rechtsgrundlagen (DSGVO)</a>
+    <a href="#berechtigungen">4. Berechtigungen (iOS)</a>
+    <a href="#dritte">5. Empfänger & Drittanbieter</a>
+    <a href="#iap">6. In-App-Käufe / Abos</a>
+    <a href="#speicher">7. Speicherdauer</a>
+    <a href="#rechte">8. Deine Rechte</a>
+    <a href="#aenderungen">9. Änderungen</a>
+  </div>
 
-  <h2>3. Welche Daten verarbeitet die App?</h2>
-  <h3>3.1 Inhalte (Video/Audio/Text)</h3>
-  <ul>
-    <li><b>Import aus Fotos/Mediathek:</b> Du wählst Videos aus deiner Mediathek.</li>
-    <li><b>Mikrofon/Audio:</b> Wird nur genutzt, soweit für Transkription/Untertitel erforderlich.</li>
-    <li><b>Transkript/Untertitel:</b> Aus dem Audio erzeugter Text, Bearbeitungen und Styles.</li>
-    <li><b>Export:</b> Das Ergebnis kann in deiner Fotos-App gespeichert werden.</li>
-  </ul>
-  <p>
-    <b>Wichtig:</b> Ob die Sprachverarbeitung komplett <i>on-device</i> oder über Apple-Dienste erfolgt,
-    hängt von iOS-Version, Sprache und Geräteeinstellungen ab. Wir senden deine Inhalte nach aktuellem Stand nicht an eigene Server.
-  </p>
+  <h2 id="verantwortlich">1. Verantwortliche Stelle</h2>
+  <div class="card">
+    <p>
+      <b>Vidcapp</b><br/>
+      E-Mail: <a href="mailto:vidcapphelp@gmail.com">vidcapphelp@gmail.com</a><br/>
+      <span class="muted">Optional: Anschrift ergänzen, wenn du ein Unternehmen/Impressum hast.</span>
+    </p>
+  </div>
 
-  <h3>3.2 Technische Daten</h3>
-  <ul>
-    <li>System-/Gerätedaten, die iOS für Berechtigungen und App-Betrieb bereitstellt.</li>
-    <li>Wenn du keine Analytics/Crash-Tools eingebaut hast: <b>keine</b> eigene Nutzungsanalyse durch uns.</li>
-  </ul>
+  <h2 id="daten">2. Welche Daten verarbeitet Vidcapp?</h2>
 
-  <h2>4. Berechtigungen</h2>
-  <ul>
-    <li><b>Fotos/Mediathek:</b> Zum Import/Export von Videos.</li>
-    <li><b>Mikrofon:</b> Für Audio/Transkription (wenn nötig).</li>
-    <li><b>Speech/Spracherkennung:</b> Zur Untertitel-Erstellung.</li>
-  </ul>
+  <h3>2.1 Inhalte (Video/Audio/Text)</h3>
+  <div class="card">
+    <ul>
+      <li><b>Import aus Fotos/Mediathek:</b> Du wählst Videos/Fotos aus, um sie zu bearbeiten.</li>
+      <li><b>Audio/Spracherkennung:</b> Für die Untertitel-Erstellung kann Audio aus dem Video verarbeitet werden.</li>
+      <li><b>Untertitel/Transkript:</b> Der aus dem Audio erzeugte Text sowie deine Bearbeitungen (Timing, Style, Farben).</li>
+      <li><b>Export:</b> Das fertige Video kann lokal gespeichert werden (z.B. in deiner Fotos-Mediathek).</li>
+    </ul>
+    <p class="muted" style="margin:0">
+      Hinweis: Ob Spracherkennung vollständig <i>on-device</i> oder über Apple-Dienste erfolgt, hängt u.a. von iOS-Version,
+      Sprache und Geräteeinstellungen ab. Vidcapp sendet nach aktuellem Stand keine Videoinhalte an eigene Server.
+    </p>
+  </div>
 
-  <h2>5. Empfänger / Drittanbieter</h2>
-  <ul>
-    <li><b>Apple:</b> iOS-Systemdienste (Speech/Spracherkennung, In-App-Käufe). Es gelten zusätzlich Apples Datenschutzbestimmungen.</li>
-    <li><b>Keine eigenen Server:</b> Nach aktuellem Stand keine Übertragung von Videos an eigene Server.</li>
-  </ul>
+  <h3>2.2 Technische Daten</h3>
+  <div class="card">
+    <ul>
+      <li><b>Geräte-/Systeminformationen</b>, die iOS für App-Betrieb, Berechtigungen und Fehlermeldungen bereitstellt.</li>
+      <li><b>Keine eigene Analytics / kein Tracking</b> durch Vidcapp (sofern du keine Analytics/Crash-SDKs integriert hast).</li>
+    </ul>
+  </div>
 
-  <h2>6. In-App-Käufe / Abos</h2>
-  <p>
-    Abonnements werden über Apple abgewickelt. Wir erhalten nur die für die Freischaltung nötigen Informationen
-    (z.B. ob ein Abo aktiv ist) sowie aggregierte Abrechnungs-/Verkaufsberichte. Zahlungsdaten (Kreditkarte etc.) erhalten wir nicht.
-  </p>
+  <h2 id="zwecke">3. Zwecke & Rechtsgrundlagen (DSGVO)</h2>
+  <div class="card">
+    <ul>
+      <li><b>Bereitstellung der App-Funktionen</b> (Bearbeitung/Untertitel/Export): Art. 6 Abs. 1 lit. b DSGVO (Vertrag/Leistung) und/oder lit. f (berechtigtes Interesse).</li>
+      <li><b>Berechtigungen</b> (z.B. Fotos/Mikrofon): Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) – du kannst Berechtigungen jederzeit in iOS-Einstellungen ändern.</li>
+      <li><b>Supportanfragen</b> per E-Mail: Art. 6 Abs. 1 lit. b und/oder lit. f DSGVO.</li>
+    </ul>
+  </div>
 
-  <h2>7. Speicherdauer</h2>
-  <ul>
-    <li>Projekte/Exports liegen lokal auf deinem Gerät bzw. in deiner Fotos-Mediathek, wenn du speicherst.</li>
-    <li>Du kannst Inhalte jederzeit in der App/Fotos löschen.</li>
-  </ul>
+  <h2 id="berechtigungen">4. Berechtigungen (iOS)</h2>
+  <div class="card">
+    <ul>
+      <li><b>Fotos/Mediathek:</b> Import/Export von Medien.</li>
+      <li><b>Mikrofon (falls genutzt):</b> Aufnahme/Verarbeitung für Untertitel-Erstellung.</li>
+      <li><b>Speech/Spracherkennung:</b> Erstellung von Untertiteln aus Audio.</li>
+    </ul>
+    <p class="muted" style="margin:0">
+      Du kannst Berechtigungen in iOS jederzeit unter <code>Einstellungen → Vidcapp</code> ändern.
+    </p>
+  </div>
 
-  <h2>8. Deine Rechte (DSGVO)</h2>
-  <p>
-    Du hast u.a. das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch.
-    Wenn du Fragen hast: <b>vidcapphelp@gmail.com</b>
-  </p>
+  <h2 id="dritte">5. Empfänger & Drittanbieter</h2>
+  <div class="card">
+    <ul>
+      <li><b>Apple</b> (iOS-Systemdienste & In-App-Käufe). Es gelten zusätzlich Apples Datenschutzbestimmungen.</li>
+      <li><b>Keine eigenen Server</b> für Videoinhalte nach aktuellem Stand.</li>
+    </ul>
+    <p class="muted" style="margin:0">
+      Falls du künftig Drittanbieter-SDKs (z.B. Crashlytics, Analytics) integrierst, musst du diesen Abschnitt aktualisieren.
+    </p>
+  </div>
 
-  <h2>9. Änderungen</h2>
-  <p>Wir können diese Datenschutzerklärung aktualisieren. Das Datum oben zeigt den Stand.</p>
+  <h2 id="iap">6. In-App-Käufe / Abos</h2>
+  <div class="card">
+    <p>
+      Abonnements werden über Apple abgewickelt. Wir erhalten keine vollständigen Zahlungsdaten (z.B. Kreditkartendaten).
+      Für die Freischaltung kann Apple Informationen bereitstellen, ob ein Abo aktiv ist, sowie aggregierte Verkaufsberichte.
+    </p>
+  </div>
 
-  <p class="muted"><a href="./index.html">← zurück</a></p>
+  <h2 id="speicher">7. Speicherdauer</h2>
+  <div class="card">
+    <ul>
+      <li>Projekt-/Exportdateien liegen lokal auf deinem Gerät bzw. in deiner Fotos-Mediathek, wenn du speicherst.</li>
+      <li>Du kannst Inhalte jederzeit in der App oder in Fotos löschen.</li>
+    </ul>
+  </div>
+
+  <h2 id="rechte">8. Deine Rechte</h2>
+  <div class="card">
+    <p>
+      Du hast u.a. das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch.
+      Wenn du Fragen hast, kontaktiere uns: <a href="mailto:vidcapphelp@gmail.com"><b>vidcapphelp@gmail.com</b></a>
+    </p>
+    <p class="muted" style="margin:0">
+      Du hast außerdem das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren.
+    </p>
+  </div>
+
+  <h2 id="aenderungen">9. Änderungen</h2>
+  <div class="card">
+    <p>Wir können diese Datenschutzerklärung aktualisieren. Das Datum oben zeigt den aktuellen Stand.</p>
+  </div>
+
+  <footer class="muted">
+    <a href="./index.html">← zurück</a>
+  </footer>
 </body>
 </html>
